@@ -13,6 +13,6 @@ $ meteor add maodouio:enrollments
 You will by default get routes for:
 ```
 /enrollments
-/enrollmets/new
+/enrollments/new
 /enrollments/:_id/edit
 ```

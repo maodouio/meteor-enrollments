@@ -2,7 +2,7 @@ Package.describe({
   name: 'maodouio:enrollments',
   version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: 'Maodou.io posts package, A meteor package that provides posts pages at /posts',
+  summary: 'Maodou.io posts package, A meteor package that provides enrollments pages at /enrollments',
   //URL to the Git repository containing the source code for this package.
   git: 'https://github.com/maodouio/meteor-enrollments',
   // By default, Meteor will default to using README.md for documentation.
