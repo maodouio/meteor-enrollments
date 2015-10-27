@@ -1,13 +1,13 @@
-Template.enrolmentsIndex.rendered = function() {
+Template.enrollmentsIndex.rendered = function() {
 };
 
-Template.enrolmentsIndex.helpers({
+Template.enrollmentsIndex.helpers({
   sayHello: function () {
     return "Hallo!";
   }
 });
 
-Template.enrolmentsIndex.events ({
+Template.enrollmentsIndex.events ({
   'click .delete-enrolment': function(e) {
     e.preventDefault();
     var item = this;

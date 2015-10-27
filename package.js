@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'rblovecll:enrollments',
+  name: 'maodouio:enrollments',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'Maodou.io posts package, A meteor package that provides posts pages at /posts',
   //URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/maodouio/meteor-posts',
+  git: 'https://github.com/maodouio/meteor-enrollments',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -21,7 +21,8 @@ Package.onUse(function(api) {
   api.use('matb33:collection-hooks@0.8.0', ["server", "client"]);
 
   // template
-  api.use('templating');
+  api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
+  
   // file
   // ls -l | awk '{print "api.addFiles(\""$9"\", \"client\");"}'
   api.addFiles('enrollments.js');
@@ -46,6 +47,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('rblovecll:enrollments');
+  api.use('maodouio:enrollments');
   api.addFiles('enrollments-tests.js');
 });

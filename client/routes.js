@@ -13,7 +13,7 @@ Router.map(function() {
       return Meteor.subscribe('enrollments');
     },
     data: {
-      posts: function () {
+      enrollments: function () {
         return Enrollments.find({}, {sort: {createdAt: -1}});
       }
     }
