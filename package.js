@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maodouio:enrollments',
-  version: '0.0.2',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Maodou.io posts package, A meteor package that provides enrollments pages at /enrollments',
   //URL to the Git repository containing the source code for this package.
@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   // version
-  api.versionsFrom('1.2.0.2');
+  //api.versionsFrom('1.2.0.2');
   // package
   api.use('iron:router@1.0.12', ["server", "client"]);
   api.use('aldeed:autoform@5.1.2', ["server", "client"]);
@@ -22,7 +22,7 @@ Package.onUse(function(api) {
 
   // template
   api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
-  
+
   // file
   // ls -l | awk '{print "api.addFiles(\""$9"\", \"client\");"}'
   api.addFiles('enrollments.js');
