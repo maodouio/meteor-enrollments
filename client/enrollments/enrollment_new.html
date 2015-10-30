@@ -1,15 +1,57 @@
 <template name="enrollmentNew">
-  <h2>Create enrollment</h2>
+  <!-- <h2>Create enrollment</h2> -->
   {{#autoForm collection="Enrollments" id="enrollmentForm" type="insert"}}
   <fieldset>
-    {{> afQuickField name='name'}}
+    <!-- {{> afQuickField name='name'}}
     {{> afQuickField name='mobile'}}
     {{> afQuickField name='email'}}
     {{> afQuickField name='wechat'}}
     {{> afQuickField name='message'}}
-    {{> afQuickField name='createdAt'}}
+    {{> afQuickField name='createdAt'}} -->
+    <div class="container">
+
+    <form role="form" style="width:400px; margin: 0 auto;">
+        <h1>填写信息</h1>
+
+        <div class="required-field-block">
+             {{> afQuickField name='name'}}
+            <!-- <div class="required-icon">
+
+            </div> -->
+        </div>
+
+        <div class="required-field-block">
+             {{> afQuickField name='mobile'}}
+            <!-- <div class="required-icon">
+
+            </div> -->
+        </div>
+
+        <div class="required-field-block">
+             {{> afQuickField name='email'}}
+
+        </div>
+
+        <div class="required-field-block">
+             {{> afQuickField name='wechat'}}
+
+        </div>
+
+        <div class="required-field-block">
+             {{> afQuickField name='message'}}
+
+        </div>
+
+        <div class="required-field-block">
+             {{> afQuickField name='createdAt'}}
+
+        </div>
+
+    </form>
+
+</div>
   </fieldset>
-  <button type="submit" class="btn btn-primary">Create</button>
-  <a class="btn btn-link" role="button" href="{{pathFor 'enrollmentsIndex'}}">Back</a>
-  {{/autoForm}}
+  <button type="submit" class="btn btn-primary" >报名</button>
+  <a class="btn btn-link" role="button" href="{{pathFor 'enrollmentsIndex'}}">返回</a>
+{{/autoForm}}
 </template>

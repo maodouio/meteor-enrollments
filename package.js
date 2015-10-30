@@ -36,7 +36,7 @@ Package.onUse(function(api) {
   api.addFiles("client/enrollments/enrollments.html", "client");
   api.addFiles("client/enrollments/enrollments_index.html", "client");
   api.addFiles("client/enrollments/enrollments_index.js", "client");
-
+  api.addFiles("client/enrollments/mycss.css", "client");
   api.addFiles("lib/collections.js");
 
   api.addFiles("server/publications.js", "server");

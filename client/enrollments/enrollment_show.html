@@ -1,9 +1,158 @@
 <template name="enrollmentShow">
-  <h2>{{name}}</h2>
-  <h2>{{mobile}}</h2>
-  <h2>{{email}}</h2>
-  <h2>{{wechat}}</h2>
-  <h2>{{message}}</h2>
-  <p>{{createdAt}}</p>
-  <a href="{{pathFor 'enrollmentsIndex'}}">Back</a>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+
+  <div class="container">
+  	<div class="row login_box">
+  	    <div class="col-md-12 col-xs-12" align="center">
+              <div class="line"><h3>报名时间：{{createdAt}}</h3></div>
+              <div class="outter"><img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950"  class="img img-responsive" onload='if (this.width>600 || this.height>800) if (this.width/this.height>600/800) this.width=600; else this.height=800;'></div>
+                <!-- <img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"/></div> -->
+              <h1>{{name}}</h1>
+              <span>手机：{{mobile}}</span>
+  	    </div>
+          <div class="col-md-8 col-xs-8 follow line" align="center">
+              <h3>
+                    微信 <br/> <br /><span>{{wechat}}</span>
+                    <br />
+              </h3>
+          </div>
+          <div class="col-md-1 col-xs-1 follow line" >
+              <h3>
+                    信息 <br/> <br /><span>{{message}}</span>
+              </h3>
+          </div>
+
+          <div class="col-md-12 col-xs-12 login_control">
+
+                  <div class="control">
+
+                  </div>
+
+                  <div class="control">
+
+                  </div>
+                  <div align="center">
+                      <a href="{{pathFor 'enrollmentsIndex'}}" role="button">返回</a>
+                  </div>
+
+          </div>
+
+
+
+      </div>
+  </div>
 </template>
+<!-- <template name="enrollmentShow">
+  <div class="well">
+        <div class="media">
+        	<a class="pull-left" href="#">
+      		<img class="media-object" width="250" src="http://www.odeaanaude.eu/catalogaude2/images/montolieu76.jpg">
+    		</a>
+    		<div class="media-body">
+      		<br><h4 class="media-heading"><strong>姓名: </strong></h4>
+          <p>{{name}}</p>
+          <h4><strong>手机:</strong></h4>
+          <p>{{mobile}}</p>
+          <ul class="list-inline list-unstyled">
+             <li><span><i class="glyphicon"></i><b>邮箱:</b>   {{email}}</span></li>
+             <br>
+              <li><span><i class="glyphicon"></i><b>微信:</b>   {{wechat}} </span></li><li>|</li>
+             <br>
+             <li><span><i class="glyphicon"></i><b>信息:</b>   {{message}} </span></li><li>|</li>
+             <br>
+             <li><span><i class="glyphicon"></i><b>报名时间:</b>   {{createdAt}} </span></li><li>|</li>
+  			    </ul>
+         </div>
+      </div>
+        <a href="{{pathFor 'enrollmentsIndex'}}" role="button">返回</a>
+        <a class="btn btn-xs btn-default" href="{{pathFor 'enrollmentEdit'}}" role="button">编辑</a>
+        <a class="btn btn-xs btn-danger delete-enrollment" href="#" role="button">删除</a>
+        <p></p>
+    </div>
+</template> -->
+
+<!-- <template name="enrollmentShow">
+<div class="container">
+  <div class="row">
+    <div class="span2">
+      <img src="http://thetransformedmale.files.wordpress.com/2011/06/bruce-wayne-armani.jpg"  alt="" class="img-rounded">
+    </div>
+    <div class="span4">
+      <blockquote>
+        <p>{{name}}</p>
+        <small><cite title="Source Title">{{createdAt}}  <i class="icon-map-marker"></i></cite></small>
+      </blockquote>
+      <p>
+        <i class="icon-envelope"></i> {{email}} <br>
+        <i class="icon-globe"></i> {{mobile}} <br>
+        <i class="icon-gift"></i> {{wechat}} <br>
+        <i class="icon-gift"></i> {{message}} <br>
+      </p>
+    </div>
+
+    <div class="span2">
+      <img src="http://thetransformedmale.files.wordpress.com/2011/06/bruce-wayne-armani.jpg"  alt="" class="img-rounded">
+    </div>
+    <div class="span4">
+      <blockquote>
+        <p>Bruce Wayne</p>
+        <small><cite title="Source Title">Gotham, United Kingdom  <i class="icon-map-marker"></i></cite></small>
+      </blockquote>
+      <p>
+        <i class="icon-envelope"></i> masterwayne@batman.com <br>
+        <i class="icon-globe"></i> www.bootsnipp.com <br>
+        <i class="icon-gift"></i> January 30, 1974
+      </p>
+    </div>
+  </div>
+<a href="{{pathFor 'enrollmentsIndex'}}" role="button">返回</a>
+</div>
+</template> -->
+
+<!-- <template name="enrollmentShow">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-lg-3 col-sm-6">
+
+              <div class="card hovercard">
+                  <div class="cardheader">
+
+                  </div>
+                  <div class="avatar">
+                      <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                  </div>
+                  <div class="info">
+                      <div class="title">
+                          <a target="_blank" >{{name}}</a>
+                      </div>
+                      <div class="desc">手机：{{mobile}}</div>
+                      <div class="desc">电子邮箱：{{email}}</div>
+                      <div class="desc">微信：{{wechat}}</div>
+                      <div class="desc">信息：{{message}}</div>
+                      <div class="desc">报名日期：{{createdAt}}</div>
+                  </div>
+                  <div class="bottom">
+                      <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                          <i class="fa fa-twitter"></i>
+                      </a>
+                      <a class="btn btn-danger btn-sm" rel="publisher"
+                         href="https://plus.google.com/+ahmshahnuralam">
+                          <i class="fa fa-google-plus"></i>
+                      </a>
+                      <a class="btn btn-primary btn-sm" rel="publisher"
+                         href="https://plus.google.com/shahnuralam">
+                          <i class="fa fa-facebook"></i>
+                      </a>
+                      <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                          <i class="fa fa-behance"></i>
+                      </a>
+                  </div>
+              </div>
+
+          </div>
+
+  	</div>
+  </div>
+  <a href="{{pathFor 'enrollmentsIndex'}}">返回</a>
+</template> -->
