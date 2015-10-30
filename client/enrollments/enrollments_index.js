@@ -8,12 +8,12 @@ Template.enrollmentsIndex.helpers({
 });
 
 Template.enrollmentsIndex.events ({
-  'click .delete-enrolment': function(e) {
+  'click .delete-enrollment': function(e) {
     e.preventDefault();
     var item = this;
 
-    if (confirm("Are you sure?")) {
-    Enrolments.remove(item._id);
+    if (confirm("确定?")) {
+    Enrollments.remove(item._id);
       console.log("Deleted!")
     }
   }

@@ -6,12 +6,12 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Mobile</th>
-            <th>Email</th>
-            <th>Wechat</th>
-            <th>Message</th>
-            <th>CreatedAt</th>
+            <th>姓名</th>
+            <th>手机</th>
+            <th>邮箱</th>
+            <th>微信</th>
+            <th>留言</th>
+            <th>报名时间</th>
           </tr>
         </thead>
         <tbody>
@@ -24,12 +24,12 @@
             <td>{{message}}</td>
             <td>{{createdAt}}</td>
             <td>
-              <a class="btn btn-xs btn-default" href="{{pathFor 'enrollmentEdit'}}" role="button">Edit</a>
-              <a class="btn btn-xs btn-danger delete-enrollment" href="#" role="button">Delete</a>
+              <a class="btn btn-xs btn-default" href="{{pathFor 'enrollmentEdit'}}" role="button">修改</a>
+              <a class="btn btn-xs btn-danger delete-enrollment" href="#" role="button">删除</a>
             </td>
           </tr>
           {{else}}
-          No enrollments
+          欢迎前来报名
           {{/each}}
         </tbody>
       </table>

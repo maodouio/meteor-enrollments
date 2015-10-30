@@ -16,12 +16,12 @@ AutoForm.hooks({
       }
     },
     onSuccess: function(operation, result,template) {
-      console.log('new Enrollment inserted successfully!');
+      console.log('您已成功报名!');
       Router.go('enrollmentsIndex', {_id: result});
     },
 
     onError: function(operation, error, template) {
-      console.log(error);
+      console.log('失败');
     }
   }
 });

@@ -1,15 +1,16 @@
 <template name="enrollmentEdit">
-  <h2>Edit enrollment</h2>
-  {{#autoForm collection="Enrollments" doc=this id="enrollmentFrom" type="update"}}
+  <h2>确认报名信息</h2>
+  {{#autoForm collection="Enrollments" doc=this id="enrollmentForm" type="update"}}
     <fieldset>
       {{> afQuickField name='name'}}
       {{> afQuickField name='mobile'}}
       {{> afQuickField name='email'}}
       {{> afQuickField name='wechat'}}
       {{> afQuickField name='message'}}
-      {{> afQuickField name='createdAt'}}
+      {{> afQuickField name='updatedAt'}}
     </fieldset>
-    <button type="submit" class="btn btn-primary">Update</button>
-    <a class="btn btn-link" role="button" href="{{pathFor 'enrollmentsIndex'}}">Back</a>
+    <!-- <a class="btn btn-xs btn-default" href="{{pathFor 'enrollmentsIndex'}}" role="button">确定</a> -->
+    <button type="submit" class="btn btn-primary">确定</button>
+    <a class="btn btn-link" role="button" href="{{pathFor 'enrollmentsIndex'}}">返回</a>
   {{/autoForm}}
 </template>
